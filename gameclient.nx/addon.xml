@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="gameclient.nx"
+		name="NXEngine"
+		version="1.0.2"
+		provider-name="Libretro">
+	<requires>
+		<import addon="xbmc.libretro" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.gameclient"
+			library_android=""
+			library_linux="nxengine_libretro.so"
+			library_osx=""
+			library_windx=""
+			library_wingl="">
+		<platforms></platforms>
+		<extensions>exe</extensions>
+		<allowvfs>false</allowvfs>
+		<blockextract>false</blockextract>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">NXEngine v1.0.0.4</summary>
+		<description>NXEngine is a complete open-source clone/rewrite of the masterpiece jump-and-run platformer Doukutsu Monogatari (also known as Cave Story).
+
+Supported files: .exe
+
+Source: https://github.com/libretro/nxengine-libretro</description>
+		<platform>linux</platform>
+		<nofanart>true</nofanart>
+		
+	</extension>
+</addon>

@@ -31,7 +31,7 @@ endif()
 include(ExternalProject)
 externalproject_add(nx
                     GIT_REPOSITORY https://github.com/libretro/nxengine-libretro
-                    GIT_TAG 4070c26
+                    GIT_TAG 775bfea
                     PREFIX nx
                     CONFIGURE_COMMAND ""
                     INSTALL_COMMAND ""

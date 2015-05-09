@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon id="game.libretro.nx"
 		name="NXEngine"
-		version="1.0.2"
+		version="1.0.0"
 		provider-name="Libretro">
 	<requires>
 		<import addon="game.libretro" version="1.0.0"/>
@@ -14,8 +14,7 @@
                    library_wingl="game.libretro.nx.dll">
 		<platforms></platforms>
 		<extensions>exe</extensions>
-		<allowvfs>false</allowvfs>
-		<blockextract>false</blockextract>
+		<supports_vfs>false</supports_vfs>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">NXEngine v1.0.0.4</summary>
@@ -23,7 +22,8 @@
 
 Supported files: .exe
 
-Source: https://github.com/libretro/nxengine-libretro</description>
+License: GPLv3</description>
 		<platform>all</platform>
+		<nofanart>true</nofanart>
 	</extension>
 </addon>

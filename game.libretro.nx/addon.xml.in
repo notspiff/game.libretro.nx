@@ -7,11 +7,7 @@
 		<import addon="game.libretro" version="1.0.0"/>
 	</requires>
 	<extension point="kodi.gameclient"
-                   library_android="libgame.libretro.nx.so"
-                   library_linux="game.libretro.nx.so"
-                   library_osx="game.libretro.nx.dylib"
-                   library_windx="game.libretro.nx.dll"
-                   library_wingl="game.libretro.nx.dll">
+                   library_@PLATFORM@="@LIBRARY_FILENAME@">
 		<platforms></platforms>
 		<extensions>exe</extensions>
 		<supports_vfs>false</supports_vfs>
@@ -23,7 +19,7 @@
 Supported files: .exe
 
 License: GPLv3</description>
-		<platform>all</platform>
+		<platform>@PLATFORM@</platform>
 		<nofanart>true</nofanart>
 	</extension>
 </addon>

@@ -1,10 +1,7 @@
+cmake_minimum_required(VERSION 3.1)
 project(game.libretro.nx)
 
-cmake_minimum_required(VERSION 2.6)
-
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR})
-
-enable_language(CXX)
 
 find_package(Kodi REQUIRED)
 
@@ -39,9 +36,7 @@ externalproject_add(nx
                     BUILD_IN_SOURCE 1)
 
 set(NX_CUSTOM_BINARY ${PROJECT_BINARY_DIR}/nx/src/nx/nxengine_libretro${CMAKE_SHARED_LIBRARY_SUFFIX}
-                     game.libretro.nx${CMAKE_SHARED_LIBRARY_SUFFIX} nx)
+                     ${PROJECT_NAME}${CMAKE_SHARED_LIBRARY_SUFFIX})
 
-build_addon(game.libretro.nx NX DEPLIBS)
-add_dependencies(game.libretro.nx nx)
-
-include(CPack)
+build_addon(${PROJECT_NAME} NX DEPLIBS)
+add_dependencies(${PROJECT_NAME} nx)

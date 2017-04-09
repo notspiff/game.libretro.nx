@@ -16,7 +16,7 @@
 		<supports_mouse>false</supports_mouse>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Cave Story (NXEngine) 1.0.0.4</summary>
+		<summary lang="en">Cave Story (NXEngine) 1.0.0.6</summary>
 		<description>NXEngine is a complete open-source clone/rewrite of the masterpiece jump-and-run platformer Doukutsu Monogatari (also known as Cave Story).
 
 Supported files: .exe</description>
